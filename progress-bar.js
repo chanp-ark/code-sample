@@ -20,6 +20,7 @@ function move() {
     let increase = setTimeout(frame, 10);
     function frame() {
       if (current < goal) {
+        // adding current by 20 will later be changed to however much was input by donor
         current += 20;
         currentAmount.textContent=current;
         // keeping style here until web design is complete
